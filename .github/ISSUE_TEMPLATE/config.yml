@@ -1,0 +1,30 @@
+# Organisation-wide default, inherited by every WebSummoner repository that
+# does not ship its own .github/ISSUE_TEMPLATE directory.
+#
+# Effect: the "New issue" button in those repos offers no blank form, only the
+# links below. Everything lands in one tracker, but existing issues and inbound
+# links keep working — unlike disabling Issues outright, this is reversible and
+# does not 404 anyone.
+#
+# websummoner/websummoner overrides this with its own templates. That is the
+# one repo where issues are actually filed.
+blank_issues_enabled: false
+contact_links:
+  - name: 🐛 Report a bug
+    url: https://github.com/WebSummoner/websummoner/issues/new?template=bug.yml
+    about: All WebSummoner bugs are tracked in one place. Pick the affected component in the form.
+  - name: ✨ Request a feature
+    url: https://github.com/WebSummoner/websummoner/issues/new?template=feature.yml
+    about: Features for the hub, UI, ggr, cm and the images are tracked together.
+  - name: 🌐 Request a browser image or version
+    url: https://github.com/WebSummoner/websummoner/issues/new?template=browser-image.yml
+    about: New browser, new version, or an architecture we do not build yet.
+  - name: 💬 Ask a question
+    url: https://github.com/orgs/WebSummoner/discussions
+    about: Usage questions, migration from Selenoid, and anything not yet a bug.
+  - name: 📚 Documentation
+    url: https://websummoner.riadvice.com
+    about: Configuration reference, migration guide and browser catalogue.
+  - name: 🔒 Report a security vulnerability
+    url: https://github.com/WebSummoner/websummoner/security/advisories/new
+    about: Please do not open a public issue for security problems.
